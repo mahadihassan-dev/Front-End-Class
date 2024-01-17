@@ -1,0 +1,115 @@
+/* Universal Design :: Start  */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --primary-color:#48B7D6;
+    --primary-color-2:#71C7DF;
+    --primary-color-4:#CDEBF4;
+    --secondary-color-1:#99CB96;
+    --secondary-color-2:#B3D8B1;
+    --natural-clolor-black:#131313;
+    --white-color:#FFFFFF;
+    --black-color:#000000;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    color: var(--white-color);
+    background: var(--black-color);
+    border-radius: 24px;
+    padding:  8px 32px;
+}
+.w-50{
+    width: 50%;
+}
+.w-100{
+    width: 100%;
+}
+.container{
+    width: 1139px;
+    margin: auto;
+}
+/* Universal Design :: End  */
+
+/* Header Design :: Start  */
+
+.header_row{
+    gap: 10px;
+    margin: 22px 0px;
+}
+.nav_list{
+    gap: 10px;
+}
+.nav_item.active a.nav_link{
+    color: var(--secondary-color-1);
+    border-bottom: 3px solid var(--secondary-color-1);
+}
+.nav_list .nav_item .nav_link{
+    padding: 8px 24px;
+    display: inline-block;
+    color: var(--natural-clolor-black);
+    font-weight: 700;
+    font-size: 16px;
+}
+.header_menu{
+    gap: 48px;
+}
+.btn_list{
+    gap: 10px
+}
+/* Header Design :: End  */
+
+/* Hero Design :: Start  */
+#hero{
+    background: var(--primary-color);
+    padding: 88px 0px;
+}
+.hero_txt{
+    width: 62%;
+}
+.hero_txt h1{
+    color:var(--white-color);
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 72px;
+    text-align: justify;
+}
+.hero_txt p{
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 22px 0px;
+
+}
+.h_btn_list{
+    justify-content: flex-start;
+    gap: 25px;
+}
+.h_btn_item:nth-child(2) .h_btn_link{
+    background-color: var(--primary-color-2);
+    color: var(--black-color);
+    border: 1px solid var(--black-color);
+    padding: 8px 12px;
+    font-weight: 600;
+}
+.h_btn_item:nth-child(2) .h_btn_link span{
+    margin-right: 5px;
+}
+.hero_img{
+    width: 38%;
+}
+/* Hero Design :: End  */
+

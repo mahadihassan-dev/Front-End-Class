@@ -1,0 +1,37 @@
+/* this is External CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* body {
+    background: red !important;
+} */
+h1 {
+    color: blue;
+}
+/* body {
+    background: green;
+} */
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    /* padding: 10px; */
+    background: teal;
+    color: #fff;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 6px;
+    text-align: center;
+    display: block;
+    width: 500px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}

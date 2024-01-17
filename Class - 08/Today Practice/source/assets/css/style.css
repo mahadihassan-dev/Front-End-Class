@@ -1,0 +1,75 @@
+/* 
+
+    Title: JobTV - First Practice Project
+    Date: 20/12/2023
+    By Mahadi.
+
+*/
+
+/* Varriables */
+:root {
+    --primary-color: #48B7D6;
+    --primary-color-1: #71C7DF;
+    --primary-color-2: #CDEBF4;
+    --secondary-color: #99CB96;
+    --secondary-color-1: #B3D8B1;
+    --default-white: #FFFFFF;
+    --default-black: #000000;
+    --default-black-1: #131313;
+    --primary-font: 'Lexend', sans-serif;
+}
+
+/* Default and Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    font-family: var(--primary-font);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.container {
+    width: 1139px;
+    margin: auto;
+    padding: 0px 15px;
+}
+
+
+/* Header :: Start */
+.header-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.nav-list .nav-item {
+    display: inline;
+}
+
+a.nav-link {
+    padding: 8px 12px;
+    color: var(--default-black-1);
+}
+
+.nav-item.active a.nav-link {
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.h-btn-list .h-btn-item {
+    display: inline;
+}
+
+li.h-btn-item a.h-btn-link {
+    padding: 8px 32px;
+    background: var(--default-black-1);
+    color: var(--default-white);
+    border-radius: 24px;
+}
+/* Header :: End */

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-image: url(../images/mount-fuji.jpg);
+    --d-hero-font-size: 96px;
+}
+
+/* Hero Section :: Start */
+
+.hero {
+    /* background: url(../images/mount-fuji.jpg); */
+    /* background-image: url(../images/mount-fuji.jpg); */
+    /* background-image: var(--bg-image); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed !important;
+}
+
+.hero-wrapper {
+    margin: auto;
+    width: 1120px;
+    padding: 355px 15px;
+    text-align: center
+}
+
+.hero-wrapper h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: var(--d-hero-font-size);
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 10px;
+    line-height: 96px;
+}
+
+.hero-wrapper p {
+    font-size: 22px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.hero-wrapper a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    border-bottom: 3px dashed;
+    padding: 10px 20px;
+    background-color: #7431fa;
+    color: #fff;
+    border-radius: 30px;
+}
+
+/* Hero Section :: End */

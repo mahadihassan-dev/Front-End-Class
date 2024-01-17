@@ -1,0 +1,572 @@
+/* Universal Design :: Start  */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --primary-color: #48B7D6;
+    --primary-color-2: #71C7DF;
+    --primary-color-4: #CDEBF4;
+    --primary-color-5: #EAF7FA;
+    --secondary-color-1: #99CB96;
+    --secondary-color-2: #B3D8B1;
+    --natural-clolor-black: #131313;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    color: var(--white-color);
+    background: var(--black-color);
+    border-radius: 24px;
+    padding: 8px 32px;
+    text-align: center;
+    display: inline-block;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.container {
+    width: 1139px;
+    margin: auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+/* Universal Design :: End  */
+
+/* Header Design :: Start  */
+
+.header_row {
+    gap: 10px;
+    margin: 22px 0px;
+}
+
+.nav_list {
+    gap: 10px;
+}
+
+.nav_list .nav_item,
+.btn_list .btn_item {
+    display: inline-block;
+}
+
+.nav_item.active a.nav_link,
+.nav_item.active a.nav_link::before {
+    color: var(--secondary-color-1);
+    width: 100%;
+    /* border-bottom: 3px solid var(--secondary-color-1); */
+}
+
+.nav_link {
+    padding: 8px 24px;
+    display: inline-block;
+    color: var(--natural-clolor-black);
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav_link::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--secondary-color-1);
+    transition: .5s;
+
+}
+
+.nav_link:hover.nav_link::before {
+    width: 100%;
+}
+
+a.btn_link.btn {
+    transition: all .5s;
+}
+
+.header_menu {
+    gap: 48px;
+}
+
+/* Header Design :: End  */
+
+/* Hero Design :: Start  */
+#hero {
+    background: var(--primary-color);
+    padding: 88px 0px;
+}
+
+.hero_txt {
+    width: 62%;
+}
+
+.hero_txt h1 {
+    color: var(--white-color);
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 72px;
+    text-align: justify;
+}
+
+.hero_txt p {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 22px 0px;
+}
+
+.h_btn_list .h_btn_item {
+    display: inline-block;
+}
+
+a.h_btn_link.btn {
+    box-shadow: 0px 8px 24px 0px rgba(255, 255, 255, 0);
+    transition: all .5s;
+}
+
+.h_btn_item:nth-child(2) .h_btn_link {
+    background-color: var(--primary-color-2);
+    color: var(--black-color);
+    border: 1px solid var(--black-color);
+    padding: 8px 12px;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: all .5s;
+}
+
+.h_btn_item:nth-child(2) .h_btn_link:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.87);
+
+}
+
+.h_btn_item:nth-child(2) .h_btn_link span {
+    margin-right: 5px;
+}
+
+.hero_img {
+    width: 38%;
+}
+
+/* Hero Design :: End  */
+/* Brand Section Design :: Start  */
+.brand-title h3 {
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.145px;
+    text-align: center;
+    padding: 38px 0px;
+}
+
+.brand-row {
+    gap: 20px;
+    padding-bottom: 81px;
+}
+
+.brand-col {
+    width: 18%;
+}
+
+/* Brand Section Design :: End  */
+
+/* Service Section Design :: Start  */
+#service {
+    background: var(--primary-color-5);
+    padding: 52px 0;
+}
+
+.card-row {
+    gap: 32px;
+    row-gap: 64px;
+    margin: 62px 0;
+}
+
+.card-col {
+    width: 31.33%;
+    text-align: center;
+    padding: 50px;
+    border-radius: 24px;
+    background: var(--white-color);
+    box-shadow: 0px 8px 24px 0px rgba(72, 183, 214, 0.11);
+    position: relative;
+    transition: all .8s;
+}
+
+.card-col:hover {
+    transform: scale(1.1);
+}
+
+.card-col:hover span {
+    transform: translate(-50%, -50%) rotate(360deg);
+    background-color: var(--black-color);
+}
+
+.card span {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 44px;
+    box-sizing: content-box;
+    transition: all .5s;
+}
+
+.card-img {
+    margin-bottom: 24px;
+}
+
+.card-txt h4 {
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.145px;
+    margin-bottom: 8px;
+}
+
+.card-txt p {
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.145px;
+}
+
+.brand-btn {
+    text-align: center;
+}
+
+.brand-btn .btn {
+    width: 344px;
+    display: inline-block;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.145px;
+    padding: 15px;
+    transition: all .8s;
+}
+
+.brand-btn .btn:hover,
+a.h_btn_link.btn:hover,
+a.btn_link.btn:hover,
+.cta-btn-col-left a.btn:hover {
+    background: var(--primary-color);
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.87);
+    color: var(--black-color);
+    transform: scale(1.01);
+}
+
+/* Service Section Design :: End  */
+/* Cta Btn Section Design :: Start  */
+#cta-btn {
+    background: var(--secondary-color-1);
+}
+
+.cta-btn-col-left {
+    width: 55%;
+    padding: 0px;
+}
+
+.cta-btn-col-right {
+    width: 45%;
+    background: url(../img/cta-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 190px;
+}
+
+.cta-btn-col-left a.btn {
+    transition: all .5s;
+    padding: 15px 45px;
+    font-size: 18px;
+}
+
+.cta-btn-col-left h2 {
+    color: var(--black-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+}
+
+/* Cta Btn Section Design :: End  */
+
+
+
+/* Footer Section Design :: Start  */
+
+#footer {
+    background: var(--black-color);
+    padding: 99px 0px;
+    color: var(--white-color);
+}
+
+.footer-row {
+    align-items: flex-start;
+}
+
+.footer-col {
+    width: 25.33%;
+}
+
+.footer-col h3 {
+    color: var(--white-color);
+    margin-bottom: 12px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+}
+
+.footer-col p {
+    color: var(--white-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer-list>li>a {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    display: inline-block;
+    transition: .5s;
+}
+
+.footer-list>li>a:hover {
+    transform: translateY(-5px);
+}
+
+.footer-form form input[type="email"] {
+    width: 301px;
+    padding: 10px 16px;
+    border-radius: 24px;
+    background: var(--white-color);
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+
+}
+
+.footer-form form input[type="button"] {
+    border: 1px solid var(--white-color);
+    margin-bottom: 15px;
+    transition: all .5s;
+}
+
+.footer-form form input[type="button"]:hover {
+    background: var(--primary-color);
+    box-shadow: 0px 5px 10px 0px rgba(170, 170, 170, 0.87);
+    color: var(--black-color);
+}
+
+.footer-social-media ul li {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.footer-social-media h3 {
+    margin-bottom: 24px;
+}
+
+.footer-social-media ul li a {
+    color: var(--white-color);
+    font-size: 32px;
+    transition: .5s;
+    display: inline-block;
+}
+
+.footer-social-media>ul>li>a:hover {
+    transform: rotate(360deg);
+}
+
+/* Footer Section Design :: End  */
+
+/* Signup Page */
+.signup-row {
+    display: flex;
+}
+
+.signup-col {
+    width: 50%;
+    /* padding: 50px; */
+
+}
+
+.signup-col-left {
+    background-color: #99CB96;
+    padding-top: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.signup-col-left p {
+    width: 60%;
+    font-size: 28px;
+    font-style: normal;
+    /* font-weight: 600; */
+    line-height: normal;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.signup-col-left img {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.signup-col-right {
+    background-color: #B3D8B1;
+}
+
+.signup-form {
+    padding: 150px 250px;
+}
+
+.signup-form h4 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.signup-form small {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.signup-form form {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.username,
+.emailAddress {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    padding: 15px 15px;
+    border-radius: 8px;
+    border: 1px solid var(--Black, #000);
+    background: transparent;
+}
+
+label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.signup-password {
+    display: flex;
+    gap: 20px;
+}
+
+.sign-pass {
+    width: 50%;
+}
+
+.sign-pass input {
+    width: 100%;
+}
+
+.signup-password label {
+    display: block;
+}
+
+.signup-btn-grp {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.signup-btn-grp p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.signup-btn-grp p a {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.signup-btn {
+    border-radius: 8px;
+    border: 1px solid #000;
+    padding: 20px 115px;
+    box-shadow: 4px 6px 15px 0px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.create-btn {
+    background: #000;
+    color: var(--white-color);
+}
+
+.sso-btn {
+    background: transparent;
+}
+
+label {
+    margin-bottom: 5px;
+}

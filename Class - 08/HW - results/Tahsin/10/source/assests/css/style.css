@@ -1,0 +1,147 @@
+/*
+
+Title : JobTV - First Pracice Poject
+Date : 23 - 12 - 2023
+BY Tahsin
+
+*/
+
+/* Variables */
+:root {
+    --primary-color: #48b7d6;
+    --primary-color-1: #71c7df;
+    --primary-color-2: #cdebf4;
+    --secondary-color: #99cb96;
+    --secondary-color-1: #b3d8b1;
+    --dafault-white: #ffffff;
+    --default-black: #000000;
+    --dafault-black-1: #131313;
+    --primary-font: 'Lexend', sans-serif;
+}   
+
+   /* Dafault and Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    font-family: var(--primary-font);
+}
+
+ ul, ol {
+    list-style: none;
+ }
+
+  .container {
+   width: 1139px;
+   margin: auto;
+   padding: 0px 15px;
+  }
+ 
+ 
+ /* Header :: Start */
+  .header-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  }
+
+  .nav-list .nav-item {
+    display: inline;
+  }
+
+  a.nav-link {
+  padding: 8px 12px;
+  color: var(--dafault-black-1);
+  }
+
+  .nav-item.activate a.nav-link {
+   color:var(--secondary-color);
+   border-bottom: 3px solid var(--secondary-color);
+  }
+
+  .h-btn-list .h-btn-item {
+    display: inline;
+  }
+
+  li.h-btn-item a.h-btn-link {
+    padding: 8px 32px;
+    background: var(--dafault-black-1);
+    color: var(--dafault-white);
+    border-radius: 24px;
+  }
+  /* Header :: End */
+
+  /* Hero Section :: Start*/
+   
+  #hero { 
+    background: var(--primary-color);
+    padding: 88px 0px;
+}
+
+
+.hero_txt{
+    width: 62%;
+}
+.hero_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+.hero_txt h1{
+    color:var(--white-color);
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 72px;
+    text-align: justify;
+}
+
+.hero_txt p{
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 22px 0px;
+}
+
+.h_btn_list{
+    justify-content: flex;
+    gap: 25px;
+
+}
+
+.h_btn_list .h_btn_item {
+    display: inline;
+}
+
+.h_btn_item .h_btn_link {
+    background-color: var(--primary-color-2);
+    color: var(--black-color);
+    border: 1px solid var(--black-color);
+    padding: 8px 12px;
+    font-weight: 600;
+    border-radius: 24px;
+}
+
+.h_btn_item .h_btn_link span {
+    margin-right: 5px;
+}
+
+.hero_img{
+    width: 38%;
+}
+
+/* Hero Section :: End*/
+
+
+
+
+
+
+

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice of Bootstrap Latest</title>
+    <!-- Theme Core -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Bootstrap Vendor -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-5.3.2/css/bootstrap.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header :: Start -->
+    <header class="primary-header bg-body-tertiary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar scroll</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Link
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Link</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header :: End -->
+
+    <main class="content-body">
+
+        <!-- Banner :: Start -->
+        <section class="hero-slider">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <!-- Slider : Nav :: Start -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <!-- Slider : Nav :: End -->
+
+                <!-- Slider Wrapper :: Start -->
+                <div class="carousel-inner">
+                    <!-- Slide : 1 -->
+                    <div class="carousel-item active h400" data-bs-interval="10000">
+                        <img src="assets/images/slide/slide-1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <!-- Slide : 2 -->
+                    <div class="carousel-item h400" data-bs-interval="2000">
+                        <img src="assets/images/slide/slide-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <!-- Slide : 3 -->
+                    <div class="carousel-item h400" data-bs-interval="3000">
+                        <img src="assets/images/slide/slide-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <!-- Slide : 4 -->
+                    <div class="carousel-item h400" data-bs-interval="4000">
+                        <img src="assets/images/slide/slide-4.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider Wrapper :: End  -->
+
+                <!-- Slider : Controller Nav :: Start -->
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <!-- Slider : Controller Nav :: End -->
+            </div>
+        </section>
+        <!-- Banner :: End -->
+
+        <!-- About Section :: Start -->
+        <section class="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="about-img">
+                            <img src="assets/images/about-img.jpg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <div class="about-content">
+                            <span class="section-tag">About</span>
+                            <h3>About us</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus deserunt
+                                expedita in quisquam eligendi eaque maiores odio reprehenderit obcaecati ab quod,
+                                voluptate delectus optio sit vel omnis? Ipsam eius eaque fuga, eligendi iusto magni
+                                tempora soluta est? Recusandae veritatis ipsa sit. Distinctio blanditiis, consequuntur
+                                similique aut minus eveniet rem fugit nulla impedit dolore, dolorem veniam! Quos rerum
+                                quod incidunt?</p>
+                            <button class="btn btn-primary">Read More... <i class="bi bi-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section :: End -->
+
+        <!-- Service Section :: Start -->
+        <section class="service my-5">
+            <div class="container">
+                <!-- Section Title :: Start -->
+                <div class="section-title text-center">
+                    <span class="section-tag">Service</span>
+                    <h3>Our Services</h3>
+                </div>
+                <!-- Section Title :: End -->
+                <!-- Service Card :: Start -->
+                <div class="row mt-3">
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="https://img.freepik.com/free-vector/co-workers-landing-page-concept_52683-25336.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="https://img.freepik.com/free-vector/brainstorming-landing-page-concept_52683-25331.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="https://img.freepik.com/free-vector/brainstorming-landing-page-concept_52683-25331.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="https://img.freepik.com/free-vector/co-workers-landing-page-concept_52683-25336.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Card :: End -->
+            </div>
+        </section>
+        <!-- Service Section :: End -->
+
+        <!-- Blog Section :: Start -->
+        <section class="service my-5">
+            <div class="container">
+                <!-- Section Title :: Start -->
+                <div class="section-title text-center">
+                    <span class="section-tag">Blog</span>
+                    <h3>Our Articles</h3>
+                </div>
+                <!-- Section Title :: End -->
+                <!-- Service Card :: Start -->
+                <div class="row mt-3">
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="https://img.freepik.com/free-vector/co-workers-landing-page-concept_52683-25336.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="https://img.freepik.com/free-vector/brainstorming-landing-page-concept_52683-25331.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="https://img.freepik.com/free-vector/brainstorming-landing-page-concept_52683-25331.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="https://img.freepik.com/free-vector/co-workers-landing-page-concept_52683-25336.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Card :: End -->
+            </div>
+        </section>
+        <!-- Blog Section :: End -->
+
+        <!-- Contact Us :: Start -->
+        <section></section>
+        <!-- Contact Us :: End -->
+
+    </main>
+
+
+    <!-- Js -->
+    <script src="assets/vendor/bootstrap-5.3.2/js/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+/* 
+
+    Title: JobTV - First Practice Project
+    Date: 20/12/2023
+    By Mahadi.
+
+*/
+
+/* Varriables */
+:root {
+    --primary-color: #48B7D6;
+    --primary-color-1: #71C7DF;
+    --primary-color-2: #CDEBF4;
+    --secondary-color: #99CB96;
+    --secondary-color-1: #B3D8B1;
+    --default-white: #FFFFFF;
+    --default-black: #000000;
+    --default-black-1: #131313;
+    --primary-font: 'Lexend', sans-serif;
+}
+
+/* Default and Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    font-family: var(--primary-font);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.container {
+    width: 1139px;
+    margin: auto;
+    padding: 0px 15px;
+}
+
+
+/* Header :: Start */
+.site-header {
+    background: var(--default-white);
+}
+
+.header-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nav-list .nav-item {
+    display: inline;
+}
+
+a.nav-link {
+    padding: 8px 12px;
+    color: var(--default-black-1);
+}
+
+.nav-item.active a.nav-link {
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.h-btn-list .h-btn-item {
+    display: inline;
+}
+
+li.h-btn-item a.h-btn-link {
+    padding: 8px 32px;
+    background: var(--default-black-1);
+    color: var(--default-white);
+    border-radius: 24px;
+}
+
+/* Header :: End */
+
+/* Hero :: Start */
+.hero {
+    background-color: var(--primary-color);
+    padding: 90px 0px;
+}
+
+.hero-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-col--left {
+    padding: 0px 9px 0px 0px;
+}
+
+.hero-col--left h1 {
+    color: var(--default-white);
+    font-family: Poppins;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px;
+}
+
+.hero-col--left p {
+    color: var(--White, #FFF);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px 0px;
+}
+
+ul.hero-cta-btn {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+li.hero-btn-item a.hero-btn-link {
+    padding: 10px 30px;
+    display: inline-block;
+    background: var(--default-black);
+    color: var(--default-white);
+    border-radius: 24px;
+    border: 1px solid var(--default-black);
+    /* transition: all ease-in-out .5s; */
+    transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) .5s;
+}
+
+li.hero-btn-item a.hero-btn-link:hover {
+    color: var(--default-black);
+    border: 1px solid var(--default-black);
+    background: var(--primary-color-1);
+    transform: translate(5px, 10px);
+    transform: rotatey(360deg) skew(10deg, 10deg);
+}
+
+li.hero-btn-item:nth-child(2) a.hero-btn-link {
+    background: teal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 24px;
+    color: var(--default-black);
+    border: 1px solid var(--default-black);
+    background: var(--primary-color-1);
+    padding: 10px 12px;
+}
+
+/* Hero :: End */
+
+/* Client :: Start */
+.client-logo {
+    padding: 60px 0px;
+}
+
+/* Client :: End */
+
+/* Service :: Start */
+.section-title {
+    color: var(--default-black);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.145px;
+}
+
+.service {
+    background: var(--primary-color-1);
+    padding: 55px 0px;
+}
+
+.service-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    width: 100%;
+}
+
+.serv-col {
+    width: 33.33%;
+    text-align: center;
+    background: var(--default-white);
+    padding: 50px;
+    border-radius: 24px;
+    border: 1px solid var(--default-white);
+    position: relative;
+    transition: all linear .5s;
+}
+
+.serv-col:hover {
+    border: 1px solid var(--default-black-1);
+}
+.serv-col:hover > span {
+    background-color: var(--default-white);
+    color: #000000;
+    border: 1px solid var(--default-black-1);
+    transform: translate(-50%, -50%) rotate(-360deg) scale(1.1);
+}
+
+.serv-col span {
+    display: block;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 24px;
+    color: var(--default-white);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all linear .5s;
+}
+
+.service-card .serv-card-thumb {
+    margin-bottom: 24px;
+}
+
+.service-card .serv-card-info h4 {
+    margin-bottom: 8px;
+    color: var(--default-black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.145px;
+}
+
+.service-card .serv-card-info p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.145px;
+}
+
+/* Service :: End */

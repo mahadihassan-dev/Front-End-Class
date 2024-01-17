@@ -1,0 +1,29 @@
+/* 
+
+    font-family: 'Abril Fatface', serif;
+    font-family: 'Poppins', sans-serif;
+
+*/
+
+:root {
+    --primary-font: 'Poppins', sans-serif;
+}
+
+* {
+    font-family: var(--primary-font);
+}
+
+.h400 {
+    height: 850px;
+}
+
+.section-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    color: #0a3622;
+    font-size: 14px;
+    margin-bottom: 15px;
+    background-color: #d1e7dd;
+    border-radius: 8px;
+    font-weight: 500;
+}
